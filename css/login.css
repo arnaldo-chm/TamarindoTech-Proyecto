@@ -1,0 +1,53 @@
+
+.contenedor_general {
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor_imagen {
+    margin: 5%;
+    /* background-color:bisque; */
+    flex: 1;
+    background-image: url('../imagenes/imagen_login.png');
+    background-repeat: no-repeat;
+    /* border-radius: 10px 10px; */
+}
+
+.contenedor_formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    align-items: center;
+    /* background-color: burlywood; */
+    justify-content: center;
+    row-gap: 5%;
+    font-size: 1.5em;
+}
+
+
+.contenedor_entrada{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.contenedor_entrada input{
+    height: 30px;
+    border-radius: 10px;
+}
+
+.contenedor_entrada input:focus{
+    background-color: rgb(238, 235, 235);
+}
+
+.contenedor_link_iniciosesion a{
+    color:  #547A20;
+}
+
+.contenedor_boton_registro {
+    /* background-color: blue; */
+}

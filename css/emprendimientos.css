@@ -1,0 +1,135 @@
+/* encabezado */
+.contenedor_encabezado{
+    display: flex;
+    justify-content: center;
+    margin: 40px 100px;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+
+.img_encabezado_emprendimientos img{
+    width:612px;
+    height: 610px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.texto_encabezado_emprendimientos{
+    width: 515px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto_encabezado_emprendimientos h1{
+    width: 205px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.texto_encabezado_emprendimientos .info_general{
+    width: 390px;
+    font-size: 1em;
+}
+
+ p{
+    margin: 15px 0;
+    font-size: 12px;
+
+}
+
+.boton_crear_emprendimiento{
+   width: 515px;
+   height: 52px;
+   border-radius: 10px;
+   background-color: #668c31;
+   border: none;
+   transition:0.5s ease;
+   font-size: 1.1em;
+   cursor: pointer;
+}
+
+.boton_crear_emprendimiento a{
+    text-decoration: none;
+    color: white;
+}
+
+.boton_crear_emprendimiento:hover{
+    background-color: #547A20;
+    transition: 0.5s ease;
+    font-size: 1.2em;
+    box-shadow: 0 0 10px #547A20;
+    color: white;
+}
+
+/* fin de encabezado */
+
+/* cards de emprendimiento */
+
+.Emprendimientos{
+    /* background-color: #333; */
+    margin: 40px 50px;
+
+}
+
+.Emprendimientos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.contenedor-emprendimientos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+
+}
+
+.contenedor-emprendimientos a{
+    text-decoration: none;
+}
+
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    transition: 0.5s ease;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    
+}
+
+.card img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+}
+
+img#emprendimiento{ 
+    height: 250px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 1em;
+    margin: 10px;
+    color: #000000;
+    text-align: start;
+}
+
+.card p {
+    font-size: 0.9em;
+    padding: 0 10px 10px;
+    color: #333;
+    text-align: start;
+}

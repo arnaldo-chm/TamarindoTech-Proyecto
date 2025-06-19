@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel administrativo</title>
+    <link rel="stylesheet" href="../css/Admin_panel.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
+
+        <!-- Link preconnect para Google fonts con la opción de Roboto como fuente de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!-- Header -->
+    <header class = "header" id="header">
+        <div class="logo">
+            <h1>Tamarindo Tech</h1>
+        </div>
+            <input type="checkbox" id="check">
+        <label for="check" class="btn">☰</label>
+        
+        <nav class="Links_Header" id= "Links_Header">
+            <ul>
+                <li><a href="inicio.html">Anuncios/Noticias</a></li>
+                <li><a href="emprendimientos.html">Emprendimientos</a></li>
+                <li><a href="transporte.html">Transporte</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <button class="boton_sing_out" id="boton_sing_out"><a href="cerrar_sesion.html">Cerrar Sesion</a></button>
+            </ul>
+        </nav>
+    </header>
+<!-- fin de header -->
+
+    <input type="checkbox" id="sidebar-check">
+
+    <div class="Contenido">
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <h2 class="sidebar-title"></h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active"><span class="menu-icon"></span>Inicio</a></li>
+                <li><a href="#"><span class="menu-icon"></span>Quejas/Consultas</a></li>
+                <li><a href="#"><span class="menu-icon"></span>Solicitudes</a></li>
+                <li><a href="#"><span class="menu-icon"></span>Miembros</a></li>
+                <li><a href="#"><span class="menu-icon"></span>Settings</a></li>
+            </ul>
+            
+            <div class="sidebar-section">
+                <div class="section-title">Contenido</div>
+                <ul class="sidebar-menu">
+                    <li><a href="#"><span class="menu-icon"></span>Noticias/Anuncios</a></li>
+                    <li><a href="#"><span class="menu-icon"></span>Emprendimientos</a></li>
+                    <li><a href="#"><span class="menu-icon"></span>Transporte</a></li>
+                    <li><a href="#"><span class="menu-icon"></span>Actividades</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Botón toggle para móvil -->
+        <label for="sidebar-check" class="sidebar-toggle">☰</label>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <div class="main-header">
+                <h1 class="main-title"></h1>
+                <div class="main-actions">
+                    <div class="user-profile">
+                        <div class="user-avatar">A</div>
+                        <div class="user-info">
+                            <p class="user-name">Nombre del admin</p>
+                            <p class="user-location">Costa Rica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Activo Section -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h3 class="section-title-main">• Activo <span class="section-count">4</span></h3>
+                        <span class="section-menu">⋯</span>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Noticias X</h4>
+                            <span class="card-menu">⋯</span>
+                        </div>
+                        <div class="card-image">
+                            <div class="flower-decoration"></div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-avatars">
+                                <div class="card-avatar">A</div>
+                                <div class="card-avatar">B</div>
+                                <div class="card-avatar">C</div>
+                            </div>
+                            <div class="card-stats">
+                                <span class="stat-item">💬 14 comments</span>
+                                <span class="stat-item">📎 15 files</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Noticias Y</h4>
+                            <span class="card-menu">⋯</span>
+                        </div>
+                        <div class="card-image">
+                            <div class="flower-decoration"></div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-avatars">
+                                <div class="card-avatar">A</div>
+                                <div class="card-avatar">B</div>
+                                <div class="card-avatar">C</div>
+                            </div>
+                            <div class="card-stats">
+                                <span class="stat-item">💬 8 comments</span>
+                                <span class="stat-item">📎 12 files</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solicitudes Section -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h3 class="section-title-main">⚠ Solicitudes <span class="section-count">3</span></h3>
+                        <span class="section-menu">⋯</span>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Solicitud A</h4>
+                            <span class="card-menu">⋯</span>
+                        </div>
+                        <div class="card-image">
+                            <div class="flower-decoration"></div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-avatars">
+                                <div class="card-avatar">A</div>
+                                <div class="card-avatar">B</div>
+                            </div>
+                            <div class="card-stats">
+                                <span class="stat-item">💬 5 comments</span>
+                                <span class="stat-item">📎 3 files</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- En Progreso Section -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h3 class="section-title-main">🔄 En Progreso <span class="section-count">2</span></h3>
+                        <span class="section-menu">⋯</span>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Proyecto Z</h4>
+                            <span class="card-menu">⋯</span>
+                        </div>
+                        <div class="card-image">
+                            <div class="flower-decoration"></div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-avatars">
+                                <div class="card-avatar">A</div>
+                                <div class="card-avatar">B</div>
+                                <div class="card-avatar">C</div>
+                            </div>
+                            <div class="card-stats">
+                                <span class="stat-item">💬 22 comments</span>
+                                <span class="stat-item">📎 8 files</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+ <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-contenido">
+                <!-- Columna 1: Logo y redes sociales -->
+                <div class="footer-section">
+                    <h3>Nunciatura</h3>
+                    <div class="social-icons">
+                        <!-- Twitter/X -->
+                        <a href="#" aria-label="Twitter">
+                            <img src="../imagenes/X.png" alt="Twitter/X">
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" aria-label="Instagram">
+                            <img src="../imagenes/logotipo-de-instagram.png" alt="Instagram">
+                        </a>
+                        <!-- YouTube -->
+                        <a href="#" aria-label="YouTube">
+                            <img src="../imagenes/youtube.png" alt="YouTube">
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" aria-label="LinkedIn">
+                           <img src="../imagenes/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Contactenos -->
+                <div class="footer-section">
+                    <h3>Contactenos</h3>
+                    <ul>
+                        <li><a href="#">Crear un Reporte</a></li>
+                        <li><a href="#">Dar una Sugerencia</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Información -->
+                <div class="footer-section">
+                    <h3>Información</h3>
+                    <ul>
+                        <li><a href="#">Tamarindo Tech</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Recursos -->
+                <div class="footer-section">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#">Tutoriales</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Contactar al Administrador</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,23 +1,72 @@
-.busqueda{
-    background-color: antiquewhite;
+.barra-busqueda{
+    margin: 2% 15% 2% 15%;
+    position: relative;
+}
+
+.barra-busqueda input {
+    width: 100%;
+    padding: 10px; /* espacio para el ícono */
+    /* border: 1px solid #ccc; */
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.barra-busqueda i {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    pointer-events: none; /* para que el ícono no interfiera con clics */
 }
 
 .lo-mas-nuevo-noticias{
-    background-color:aqua;
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr 3fr;
-    /* grid-template-columns: 1fr 6fr 1fr 3fr; */
+    margin: 2% 15% 2% 15%;
+    grid-template-columns: 1fr 15fr 1fr 8fr;
     grid-template-rows: 1fr 9fr;
+    grid-template-rows: 30px auto; /*Se deja filo el height de la primera fila*/
+    gap: 15px;
 }
 
 .noticia-header{
-    background-color: beige;
-    grid-column-start: 1;
-    grid-column-end: 10;
+    grid-column: 1 / -1; /*Permite tomar toda la primera fila*/
+    display: flex; 
+    gap: 10px;   
+    /* padding: 5px; */
+    color: #547A20;
 }
-.btn-noticia-anterior{
-    background-color: blue;
+
+/* El resto de los elementos se ordena acorde a su orden en 
+html para las cuatro columnas definidas 1fr 9fr 1fr 5fr */
+.btn-noticia{
+    background-color: #9cc264;
+    font-size: 1.5em;
+    opacity: 0.9;
 }
-.btn-ultima-noticia{
-    background-color: blue;
+.btn-noticia:hover{
+    opacity: 1;
+    scale: 0.98;
+}
+.ultima-noticia{
+    display: flex;
+    flex-direction: column;
+}
+.ultima-noticia img{
+    width: 100%;
+}
+.btn-noticia{
+    background-color: #9cc264;
+    font-size: 1.5em;
+}
+.contenedor-noticias-recientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 5px;
+}
+.contenedor-noticia-reciente{
+    display: flex;
+    gap: 5px;
+}
+.contenedor-noticia-reciente img{
+    width: 40%;
 }

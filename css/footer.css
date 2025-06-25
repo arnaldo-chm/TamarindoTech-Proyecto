@@ -1,7 +1,8 @@
 footer {
-    background-color: rgb(245, 245, 245);
+    background-color:#f9f6f6;
     padding: 40px 0 30px 0;
     margin-top: 50px;
+    border-top: 2px solid #d3e8c0;
 }
 
 .footer-contenedor{

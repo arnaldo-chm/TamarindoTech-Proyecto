@@ -116,14 +116,11 @@ html para las cuatro columnas definidas 1fr 9fr 1fr 5fr */
     height: 200px; 
     object-fit: cover; 
     transition: transform 0.3s ease;
+    margin:15px;
+    box-shadow: 0 20px 8px rgba(0,0,0,0.1);
 }
 .card:hover img {
     transform: scale(1.05); 
-}
-
-.img_noticias{
-    width: 240px;
-    margin:15px;
 }
 
 img#noticias{

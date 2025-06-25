@@ -176,6 +176,10 @@ img#noticias{
         margin: 5% 5%;
     }
 
+    .noticia-header{
+        justify-content: center;
+    }
+
     .contenedor-noticia-reciente{
         display: none;
     }

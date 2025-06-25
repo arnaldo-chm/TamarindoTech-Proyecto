@@ -339,4 +339,77 @@ header{
 }
 
 
+/* Tarjetas y seccion de valores */
+
+.Valores{
+    background: linear-gradient(0deg, #202c16 0%,#547A20 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Texto-Valores h2{
+    font-family: "poppins", sans-serif;
+    font-size: 3rem;
+    padding-right: 1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    text-align: center;
+    flex-direction: column;
+}
+
+.Texto-Valores p{
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    text-align: center;
+    flex-direction: column;
+}
+
+.contenedor-tarjetas-valores .tarjeta-valores .cara.cara01{
+    position: relative;
+    background: #9b3b3b;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.contenedor-tarjetas-valores .tarjeta-valores:hover .cara.cara01{
+    background: #ff0057;
+    transform: translateY(0);
+}
+
+.contenedor-tarjetas-valores .tarjeta-valores .cara .contenido-T-valores i{
+    max-width: 100px;
+}
+
+.contenedor-tarjetas-valores .tarjeta-valores .cara.cara02{
+    position: relative;
+    background: #333;
+    display: none;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8s);
+    transform: translateY(-100px);
+}
+
+.contenedor-tarjetas-valores .tarjeta-valores:hover .cara.cara02{
+    transform: translateY(0);
+    display: block;
+}
+
 

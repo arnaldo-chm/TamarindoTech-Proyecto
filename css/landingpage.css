@@ -1,0 +1,242 @@
+.Nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, #202c16 0%, #547A20 100%);
+    flex-wrap: wrap-reverse;
+    min-height: 100vh;
+    padding: 40px 20px;
+    gap: 40px;
+}
+
+.ImagenInicio{
+    width: 400px;
+    padding: 50px;
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 0 20px 40px #547A20;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.TextoInicio {
+    max-width: 600px;
+    padding: 20px;
+}
+
+
+.TextoInicio h2{
+    font-family: "poppins", sans-serif;
+    font-size: 2rem;
+    padding-right: 1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.TextoInicio P{
+   font-family: "roboto";
+    padding-right: 1rem;
+    color: #ffffff;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Header adactado al estilo del landing page */
+
+header{
+    width: 100%;
+    height: 80px;    
+    background: linear-gradient(0deg, #547A20 0%,  #202c16 100%);
+    /* border-bottom: 2px solid #d3e8c0; */
+    /* box-shadow: 0 4px 10px #668c31; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.logo{
+    color: #cccccc;
+    margin-left: 80px;
+    font-size: 1.2em;
+}
+
+.Links_Header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.Links_Header li{
+    list-style: none;
+    margin-left: 22px;
+}
+
+.Links_Header li a{
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 1.1em;
+    transition: all 0.8s;
+    font-weight: bold;
+}
+
+.boton_sing_out{
+    background-color: #668c31;
+    margin-left: 25px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+}
+
+.boton_sing_out a{
+    text-decoration: none;
+    color: white;
+}
+
+.boton_sing_out:hover{
+    background-color: #547A20;
+    transition: all 0.5s;
+    font-size: 1.2em;
+    box-shadow: 0 0 10px #547A20;
+}
+
+.Links_Header li a:hover{
+    color: #547A20;
+    transition: all 0.8s;
+    font-size: 1.2em; 
+}   
+
+/* Menú hamburguesa - oculto por defecto */
+
+#check {
+    display: none;
+}
+
+.btn {
+    display: none;
+    font-size: 1.5em;
+    color: #cccccc;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Media queries para responsive */
+@media (max-width: 1083px) {
+    .logo {
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+    
+    .btn {
+        display: block;
+    }
+    
+    .Links_Header {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: linear-gradient(0deg,#202c16 0%, #547A20 100%);
+        transition: all 0.5s ease;
+        z-index: 9;
+    }
+
+    .Links_Header li a:hover{
+        color: #cccccc;
+        transition: all 0.8s;
+        font-size: 1.5em; 
+    }   
+    
+    .Links_Header ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding-top: 50px;
+        height: 100%;
+    }
+    
+    .Links_Header li {
+        margin: 20px 0;
+    }
+    
+    .Links_Header li a {
+        font-size: 1.3em;
+        display: block;
+        padding: 10px 20px;
+    }
+    
+    .boton_sing_out {
+        margin: 30px 0 0 0;
+        padding: 15px 25px;
+        font-size: 1.2em;
+    }
+    
+    /* Mostrar menú cuando checkbox está marcado */
+    #check:checked ~ .Links_Header {
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 70px;
+        padding: 0 15px;
+    }
+    
+    .logo {
+        margin-left: 10px;
+        font-size: 1em;
+    }
+    
+    .btn {
+        margin-right: 10px;
+        font-size: 1.3em;
+    }
+    
+    .Links_Header {
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+    
+    .Links_Header ul {
+        padding-top: 30px;
+    }
+    
+    .Links_Header li {
+        margin: 15px 0;
+    }
+    
+    .Links_Header li a {
+        font-size: 1.2em;
+    }
+    
+    .boton_sing_out {
+        padding: 12px 20px;
+        font-size: 1.1em;
+    }
+}
+
+
+
+

@@ -16,7 +16,7 @@
 
 .card h4 {
   font-size: 24px;
-  color: #2e7d32;
+  color: #668c31;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -32,7 +32,7 @@
 }
 
 .card .envio {
-  background-color: #4caf50;
+  background-color: #668c31;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -45,7 +45,7 @@
 }
 
 .card .envio:hover {
-  background-color: #388e3c;
+  background-color: #668c31;
 }
 
 .card p {
@@ -61,11 +61,11 @@
 }
 
 main{
-    background: linear-gradient( #66bb6a, #dcedc8);
+    background: linear-gradient( #789e42, #9cc264);
 }
 
 body{
-    background: linear-gradient( #dcedc8, #dcedc8);
+    background: linear-gradient( #9cc264, #9cc264);
 }
 
 footer{

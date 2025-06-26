@@ -586,7 +586,7 @@ header{
 
 /* Proyectos */
 .proyectos{
-   background: linear-gradient(0deg, #547A20  0%,#202c16 100%);
+   background: linear-gradient(0deg, #202c16 0%,#547A20 100%);
     min-height: 100vh;
     padding: 40px 20px;
     display: flex;
@@ -628,18 +628,16 @@ header{
     justify-content: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .contenedor-encabezado{
     position: relative;   /* CLAVE: Para posicionar el overlay */
     width: 700px;
     height: auto;
-    background-color: #d3d3d3;
+    background: linear-gradient(135deg, #303a21  0%,#000000 100%);
     border-radius: 1rem 1rem 0 0;
     margin-top: 30px;
     transition: all 2s;
-    box-shadow: 0 0px 40px #000000;
     cursor: pointer;
     overflow: hidden; /*IMPORTANTE: Para que el overlay no se salga */
 }
@@ -732,11 +730,13 @@ header{
     border-radius: 1rem;
     box-shadow: 0 20px 40px #000000;
     transition: transform 2s ease; /* Efecto adicional en la imagen */
+    
 }
 
 /*  La imagen se agranda ligeramente en hover */
 .contenedor-encabezado:hover .fondo-encabezado-proyecto img {
     transform: scale(1.05);
+    box-shadow: 0 20px 40px #547A20;
 }
 
 @media (max-width: 768px) {
@@ -761,8 +761,22 @@ header{
 
 .contenedor-informacion-proyecto{
     width: 700px;
-    height: 80px;
-    background-color: #752d2d;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.texto-pie-de-pagina-tarjeta-proyecto{
+    margin: 30px;
+    padding: 20px;
+}
+
+.texto-pie-de-pagina-tarjeta-proyecto h3{
+    font-family: "poppins", sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
 }
 
 

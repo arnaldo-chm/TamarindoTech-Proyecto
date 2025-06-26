@@ -638,15 +638,15 @@ header{
     background-color: #d3d3d3;
     border-radius: 1rem 1rem 0 0;
     margin-top: 30px;
-    transition: all 1.2s;
-    box-shadow: 0 20px 40px #000000;
+    transition: all 2s;
+    box-shadow: 0 0px 40px #000000;
     cursor: pointer;
     overflow: hidden; /*IMPORTANTE: Para que el overlay no se salga */
 }
 
 .contenedor-encabezado:hover {
     background: linear-gradient(135deg, #303a21  0%,#000000 100%);
-    transition: all 1.2s;
+    transition: all 2s;
     display: block;
 }
 /* Cuando haces hover en contenedor-encabezado, se muestra el overlay */
@@ -668,7 +668,7 @@ header{
     font-size: 1.1em;
     cursor: pointer;
     opacity: 0; /* ← INVISIBLE inicialmente */
-    transition: all 1s ease;
+    transition: all 2s ease;
 }
 
 /*  Cuando haces hover, el botón aparece y se desliza hacia arriba */
@@ -678,13 +678,13 @@ header{
     background: linear-gradient(135deg, #303a21  0%,#000000 100%);
     font-size: 1.2em;
     box-shadow: 0 20px 40px #547A20;
-    transition: all 1s ease;
+    transition: all 2s ease;
 }
 
 .link-proyecto a{
     text-decoration: none;
     color: #ffffff;
-    transition: all 0.8s;
+    transition: all 2s;
     font-size: 1em;
     font-weight: bold;
 }
@@ -731,7 +731,7 @@ header{
     height: 300px;
     border-radius: 1rem;
     box-shadow: 0 20px 40px #000000;
-    transition: transform 1s ease; /* Efecto adicional en la imagen */
+    transition: transform 2s ease; /* Efecto adicional en la imagen */
 }
 
 /*  La imagen se agranda ligeramente en hover */
@@ -765,20 +765,6 @@ header{
     background-color: #752d2d;
 }
 
-.link-proyecto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    background: #b3b3b3;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25PX;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: all 0.5s;
-}
 
 
 

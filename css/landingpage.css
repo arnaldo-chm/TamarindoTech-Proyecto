@@ -68,6 +68,7 @@ header{
 }
 
 .logo{
+    font-family: "poppins", sans-serif;
     color:#cccccc;
     margin-left: 80px;
     font-size: 1.2em;
@@ -198,7 +199,7 @@ header{
 
 @media (max-width: 480px) {
     header {
-        height: 70px;
+        height: 82px;
         padding: 0 15px;
     }
     
@@ -396,7 +397,7 @@ header{
     transform: translateY(100px);
     box-shadow: #000000 0 20px 50px;
     border-radius: 1rem;
-    
+    cursor: pointer;
 }
 
  .tarjeta-valores:hover .cara.cara01{
@@ -448,4 +449,112 @@ header{
     color: #547A20;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     line-height: 1.2;
+    text-decoration: underline;
+}
+
+/* Enfoque */
+
+.enfoque{
+    background: linear-gradient(0deg, #547A20  0%,#202c16 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Texto-Enfoque h2{
+    font-family: "poppins", sans-serif;
+    font-size: 3rem;
+    padding-right: 1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    text-align: center;
+    flex-direction: column;
+}
+
+.Texto-Enfoque p{
+    font-family: "roboto";
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    text-align: center;
+    flex-direction: column;
+}
+
+.Texto-Enfoque{
+    margin-bottom: 50px;
+}
+
+.contenido-enfoque{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-tarjeta-enfoque{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: 450px;
+    background-color: #c5c5c5;
+    border-radius: 1rem;
+}
+
+.contenido-encabezado-tarjeta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    width: auto;
+    height: auto;
+    /* background-color: #202c16; */
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.contenido-encabezado-tarjeta img{
+    width: 100px;
+    height: 100px;
+    animation: flotar 5s ease-in-out infinite;
+}
+
+.texto-tarjeta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.texto-tarjeta h3{
+    font-family: "poppins", sans-serif;
+    font-size: 2.5rem;
+    color: #000000;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.texto-tarjeta p{
+    font-family: "roboto";
+    font-size: 1.2rem;
+    color: #000000;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    text-align: center;
 }

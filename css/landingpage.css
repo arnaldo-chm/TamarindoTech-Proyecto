@@ -632,11 +632,61 @@ header{
 }
 
 .contenedor-encabezado{
+    position: relative;   /* CLAVE: Para posicionar el overlay */
     width: 700px;
     height: auto;
     background-color: #d3d3d3;
     border-radius: 1rem 1rem 0 0;
     margin-top: 30px;
+    transition: all 1.2s;
+    box-shadow: 0 20px 40px #000000;
+    cursor: pointer;
+    overflow: hidden; /*IMPORTANTE: Para que el overlay no se salga */
+}
+
+.contenedor-encabezado:hover {
+    background: linear-gradient(135deg, #303a21  0%,#000000 100%);
+    transition: all 1.2s;
+    display: block;
+}
+/* Cuando haces hover en contenedor-encabezado, se muestra el overlay */
+.contenedor-encabezado:hover .fondo-encabezado-proyecto::before {
+    opacity: 1; /* ← Se vuelve VISIBLE */
+}
+
+/* BOTÓN - Se oculta inicialmente */
+.link-proyecto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(20px); /* ← Desplazado hacia abajo */
+    z-index: 10;
+    background: #b3b3b3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    opacity: 0; /* ← INVISIBLE inicialmente */
+    transition: all 1s ease;
+}
+
+/*  Cuando haces hover, el botón aparece y se desliza hacia arriba */
+.contenedor-encabezado:hover .link-proyecto {
+    opacity: 1; /* ← Se vuelve VISIBLE */
+    transform: translate(-50%, -50%) translateY(0); /* ← Regresa a su posición */
+    background: linear-gradient(135deg, #303a21  0%,#000000 100%);
+    font-size: 1.2em;
+    box-shadow: 0 20px 40px #547A20;
+    transition: all 1s ease;
+}
+
+.link-proyecto a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.8s;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .tecnologias-usadas{
@@ -667,22 +717,68 @@ header{
 
 .fondo-encabezado-proyecto {
     /* background-color: #547A20; */
+    position: relative;  /* CLAVE: Para el overlay */
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
 .fondo-encabezado-proyecto img{
     width: 500px;
     height: 300px;
     border-radius: 1rem;
     box-shadow: 0 20px 40px #000000;
+    transition: transform 1s ease; /* Efecto adicional en la imagen */
 }
+
+/*  La imagen se agranda ligeramente en hover */
+.contenedor-encabezado:hover .fondo-encabezado-proyecto img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+            .contenedor-encabezado,
+            .contenedor-informacion-proyecto {
+                width: 90%;
+            }
+            
+            .fondo-encabezado-proyecto img {
+                width: 300px;
+                height: 180px;
+            }
+            
+            .texto-proyectos {
+                width: 90%;
+            }
+            
+            .texto-proyectos h2 {
+                font-size: 2rem;
+            }
+        }
 
 .contenedor-informacion-proyecto{
     width: 700px;
     height: 80px;
     background-color: #752d2d;
 }
+
+.link-proyecto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: #b3b3b3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25PX;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
 

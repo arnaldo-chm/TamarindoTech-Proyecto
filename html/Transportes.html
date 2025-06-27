@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inicio</title>
-        <link rel="stylesheet" href="../css/inicio.css">
+        <link rel="stylesheet" href="../css/Transporte.css">
         <link rel="stylesheet" href="../css/general.css">
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/footer.css">
@@ -36,71 +36,71 @@
     </header>
 <!-- fin de header -->
 
-<!-- Inicio -->
- <!-- el estilo de la clase inicio va a ser general ya que al header estar en posicion fixed y el body estara en posicion relative y la clase inicio estara en posicion absolute lo que haria que el header y el body se superpongan y se vea como si el header fuera un contenedor y el body fuera su hijo -->
-<div class="main-content">
-    <div class="Contenido"> 
-        <section class="Bienvenido" id="Bienvenido">
-            <div class="contenedor">
-
-                <div class="texto_bienvenido">
-                    <h1 class = "titulo">Bienvenidos a Nunciatura</h1>
-                    <p>Esta página busca brindarte información esencial sobre tu comunidad.
-                        Navega por las distintas secciones y mantente informado sobre los eventos más recientes de nunciatura.</p>
-                    
-                </div>
-
-                <div class="img">
-                    <img src="../imagenes/Inicio_teatro.png" alt="Teatro Nacional">
-                </div>
-
+<!-- Hero -->
+    <div class="main-content Contenido">
+    <section class="Bienvenido" id="Bienvenido">
+        <div class="contenedor">
+            <div class="texto_bienvenido">
+                <h1 class = "titulo">Bienvenidos a Transportes</h1>
+                <p>Esta página está diseñada para ofrecerte información clave sobre las rutas de transporte disponibles en tu comunidad. Explora las distintas secciones para conocer los horarios, tarifas y contactos, y mantente al día con las actualizaciones más recientes del servicio de transporte.</p>
+                
             </div>
-
-        </section>
-        <!-- fin de bienvenido -->
-
-        <!-- noticias -->
-        <section class="Noticias" id="Noticias">
-
-            <h2>Noticias</h2>
-                <div class="contenedor-noticias">
-                <a href="">
-                    <div class="card" id="noticias">
-                        <img src="../imagenes/NoticiaEjm.png" class="img_noticias"  id="noticias" alt="Accidente"/>
-                        <h3>Accidente Provocado por Aceite en la Vía</h3>
-                        <p>El jueves 15 de Enero un derrame de aceite en la vía provocó un accidente de 3 vehículos</p>
-                    </div>
-                </a>
-
-                <a href="">
-                    <div class="card" id="noticias">
-                        <img src="../imagenes/NoticiaEjm.png" class="img_noticias"  id="noticias" alt="Accidente"/>
-                        <h3>Accidente Provocado por Aceite en la Vía</h3>
-                        <p>El jueves 15 de Enero un derrame de aceite en la vía provocó un accidente de 3 vehículos</p>
-                    </div>
-                </a>
-
-                <a href="">
-                    <div class="card" id="noticias">
-                        <img src="../imagenes/NoticiaEjm.png" class="img_noticias"  id="noticias" alt="Accidente"/>
-                        <h3>Accidente Provocado por Aceite en la Vía</h3>
-                        <p>El jueves 15 de Enero un derrame de aceite en la vía provocó un accidente de 3 vehículos</p>
-                    </div>
-                </a>
-
-                <a href="">
-                    <div class="card" id="noticias" id="noticias">
-                        <img src="../imagenes/NoticiaEjm.png" class="img_noticias" id="noticias" alt="Accidente"/>
-                        <h3>Accidente Provocado por Aceite en la Vía</h3>
-                        <p>El jueves 15 de Enero un derrame de aceite en la vía provocó un accidente de 3 vehículos</p>
-                    </div>
-                </a>
+            <div class="img">
+                <img src="../imagenes/buses.jpg" alt="Teatro Nacional">
+            </div>
+        </div>
+    </section>
+        <!-- Lista de transportes -->
+        <section class="Transporte">
+            <div class="admin-btn-container">
+                <h2>Transportes</h2>
+                <button class="admin-btn">Agregar Transporte</button>
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Ruta Tamarindo – Santa Cruz</h3>
+                    <p><strong>Horarios:</strong> 6:00am, 12:00pm, 6:00pm</p>
+                    <p><strong>Tarifa:</strong> ₡1,200</p>
+                    <p><strong>Contacto:</strong> 8888-8888</p>
+                    <p class="updated">Última actualización: 15/06/2025</p>
+                    <button class="admin-btn">Editar</button>
                 </div>
+                <div class="card">
+                    <h3>Ruta Tamarindo – Liberia</h3>
+                    <p><strong>Horarios:</strong> 7:00am, 1:00pm, 7:00pm</p>
+                    <p><strong>Tarifa:</strong> ₡2,000</p>
+                    <p><strong>Contacto:</strong> 8999-9999</p>
+                    <p class="updated">Última actualización: 14/06/2025</p>
+                    <button class="admin-btn">Editar</button>
+                </div>
+                <div class="card">
+                    <h3>Ruta Tamarindo – Nosara</h3>
+                    <p><strong>Horarios:</strong> 8:00am, 2:00pm, 8:00pm</p>
+                    <p><strong>Tarifa:</strong> ₡1,500</p>
+                    <p><strong>Contacto:</strong> 8777-7777</p>
+                    <p class="updated">Última actualización: 13/06/2025</p>
+                    <button class="admin-btn">Editar</button>
+                </div>
+                <div class="card">
+                    <h3>Ruta Tamarindo – Playa Grande</h3>
+                    <p><strong>Horarios:</strong> 9:00am, 3:00pm, 9:00pm</p>
+                    <p><strong>Tarifa:</strong> ₡800</p>
+                    <p><strong>Contacto:</strong> 8666-6666</p>
+                    <p class="updated">Última actualización: 12/06/2025</p>
+                    <button class="admin-btn">Editar</button>
+                </div>
+                <div class="card">
+                    <h3>Ruta Tamarindo – Flamingo</h3>
+                    <p><strong>Horarios:</strong> 10:00am, 4:00pm, 10:00pm</p>
+                    <p><strong>Tarifa:</strong> ₡1,000</p>
+                    <p><strong>Contacto:</strong> 8555-5555</p>
+                    <p class="updated">Última actualización: 11/06/2025</p>
+                    <button class="admin-btn">Editar</button>
+                </div>
+            </div>
         </section>
-    </div> 
-</div>
-<!-- fin contenido -->
-
+    </div>
+  <!-- Footer -->
     <footer class="footer">
         <div class="footer-contenedor">
             <div class="footer-contenido">
@@ -157,8 +157,5 @@
             </div>
         </div>
     </footer>
-
-
-    
 </body>
 </html>

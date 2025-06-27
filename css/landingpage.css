@@ -587,8 +587,8 @@ header{
 /* Proyectos */
 .proyectos{
    background: linear-gradient(0deg, #202c16 0%,#547A20 100%);
-    min-height: 100vh;
-    padding: 40px 20px;
+    /* min-height: 100vh; */
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -739,26 +739,6 @@ header{
     box-shadow: 0 20px 40px #547A20;
 }
 
-@media (max-width: 768px) {
-            .contenedor-encabezado,
-            .contenedor-informacion-proyecto {
-                width: 90%;
-            }
-            
-            .fondo-encabezado-proyecto img {
-                width: 300px;
-                height: 180px;
-            }
-            
-            .texto-proyectos {
-                width: 90%;
-            }
-            
-            .texto-proyectos h2 {
-                font-size: 2rem;
-            }
-        }
-
 .contenedor-informacion-proyecto{
     width: 700px;
     height: auto;
@@ -779,6 +759,442 @@ header{
     margin-bottom: 10px;
 }
 
+/* Media Queries para Responsive Design */
 
+/* Tablets y pantallas medianas (768px - 1024px) */
+@media (max-width: 1024px) {
+    /* Sección Hero/Nosotros */
+    .Nosotros {
+        padding: 20px 15px;
+        gap: 30px;
+    }
+    
+    .ImagenInicio {
+        width: 300px;
+        padding: 30px;
+    }
+    
+    .TextoInicio h2 {
+        font-size: 1.8rem;
+    }
+    
+    .TextoInicio p {
+        font-size: 1.1rem;
+    }
+    
+    /* Filosofía */
+    .TextoFilosofia h2 {
+        font-size: 2.5rem;
+    }
+    
+    .tarjeta {
+        width: 350px;
+        height: 400px;
+    }
+    
+    /* Valores */
+    .Texto-Valores h2 {
+        font-size: 2.5rem;
+    }
+    
+    .cara.cara01, .cara.cara02 {
+        width: 180px;
+        height: 180px;
+    }
+    
+    /* Enfoque */
+    .Texto-Enfoque h2 {
+        font-size: 2.5rem;
+    }
+    
+    .info-tarjeta-enfoque {
+        width: 90%;
+        max-width: 500px;
+    }
+    
+    .texto-secundario-enfoque {
+        width: 90%;
+        max-width: 500px;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    
+    .contenido-enfoque {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Proyectos */
+    .texto-proyectos {
+        width: 80%;
+    }
+    
+    .texto-proyectos h2 {
+        font-size: 2.5rem;
+    }
+    
+    .contenedor-encabezado,
+    .contenedor-informacion-proyecto {
+        width: 90%;
+        max-width: 600px;
+    }
+    
+    .fondo-encabezado-proyecto img {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+/* Tablets pequeñas y móviles grandes (481px - 768px) */
+@media (max-width: 768px) {
+    /* Sección Hero/Nosotros */
+    .Nosotros {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 15px 40px;
+    }
+    
+    .ImagenInicio {
+        width: 250px;
+        padding: 20px;
+    }
+    
+    .TextoInicio {
+        max-width: 100%;
+    }
+    
+    .TextoInicio h2 {
+        font-size: 1.6rem;
+        padding-right: 0;
+    }
+    
+    .TextoInicio p {
+        font-size: 1rem;
+        padding-right: 0;
+    }
+    
+    /* Filosofía */
+    .TextoFilosofia h2 {
+        font-size: 2rem;
+        padding-right: 0;
+    }
+    
+    .TextoFilosofia p {
+        font-size: 1rem;
+        padding-right: 0;
+    }
+    
+    .contendor-tarjetas {
+        gap: 40px;
+    }
+    
+    .tarjeta {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        min-height: 350px;
+    }
+    
+    /* Valores */
+    /* .Texto-Valores h2 {
+        font-size: 2rem;
+        padding-right: 0;
+    }
+    
+    .Texto-Valores p {
+        font-size: 1rem;
+        padding-right: 0;
+    }
+    
+    .contenedor-tarjetas-valores {
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .cara.cara01, .cara.cara02 {
+        width: 160px;
+        height: 160px;
+    } */
+    
+    /* Enfoque */
+    .Texto-Enfoque h2 {
+        font-size: 2rem;
+        padding-right: 0;
+    }
+    
+    .Texto-Enfoque p {
+        font-size: 1rem;
+        padding-right: 0;
+    }
+    
+    .contenido-encabezado-tarjeta {
+        gap: 15px;
+        margin-top: 30px;
+    }
+    
+    .contenido-encabezado-tarjeta img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .texto-tarjeta h3 {
+        font-size: 1.8rem;
+    }
+    
+    .texto-tarjeta p {
+        font-size: 1rem;
+    }
+    
+    .texto-secundario-enfoque h3 {
+        font-size: 1.8rem;
+    }
+    
+    .texto-secundario-enfoque p {
+        font-size: 1rem;
+    }
+    
+    /* Proyectos */
+    .texto-proyectos {
+        width: 90%;
+    }
+    
+    .texto-proyectos h2 {
+        font-size: 2rem;
+        padding-right: 0;
+    }
+    
+    .texto-proyectos p {
+        font-size: 1rem;
+        padding-right: 0;
+    }
+    
+    .contenedor-encabezado,
+    .contenedor-informacion-proyecto {
+        width: 95%;
+    }
+    
+    .fondo-encabezado-proyecto img {
+        width: 300px;
+        height: 180px;
+    }
+    
+    .tecnologias-usadas {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
+        gap: 5px;
+    }
+    
+    .tecnologia {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .texto-pie-de-pagina-tarjeta-proyecto h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Móviles (320px - 480px) */
+@media (max-width: 480px) {
+    /* Sección Hero/Nosotros */
+    .Nosotros {
+        padding: 90px 10px 30px;
+        gap: 20px;
+    }
+    
+    .ImagenInicio {
+        width: 200px;
+        padding: 15px;
+    }
+    
+    .TextoInicio h2 {
+        font-size: 1.4rem;
+    }
+    
+    .TextoInicio p {
+        font-size: 0.9rem;
+        margin: 15px 0;
+    }
+    
+    /* Filosofía */
+    .Vision-Mision {
+        padding: 30px 10px;
+    }
+    
+    .TextoFilosofia h2 {
+        font-size: 1.8rem;
+    }
+    
+    .TextoFilosofia p {
+        font-size: 0.9rem;
+    }
+    
+    .contendor-tarjetas {
+        gap: 30px;
+    }
+    
+    .tarjeta {
+        width: 95%;
+        height: auto;
+        min-height: 320px;
+    }
+    
+    .tarjeta h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .tarjeta p {
+        font-size: 1rem;
+    }
+    
+    /* Valores */
+    .Valores {
+        padding: 30px 10px;
+    }
+    
+    .Texto-Valores h2 {
+        font-size: 1.8rem;
+    }
+    
+    .Texto-Valores p {
+        font-size: 0.9rem;
+    }
+    
+    .contenedor-tarjetas-valores {
+        gap: 15px;
+        padding: 5px;
+    }
+    
+    .cara.cara01, .cara.cara02 {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .contenido-T-valores h2 {
+        font-size: 1.2rem;
+    }
+    
+    .contenido-T-valores p {
+        font-size: 0.9rem;
+    }
+    
+    /* Enfoque */
+    .enfoque {
+        padding: 30px 10px;
+    }
+    
+    .Texto-Enfoque h2 {
+        font-size: 1.8rem;
+    }
+    
+    .Texto-Enfoque p {
+        font-size: 0.9rem;
+    }
+    
+    .info-tarjeta-enfoque {
+        height: auto;
+        min-height: 350px;
+        padding: 20px 10px;
+    }
+    
+    .contenido-encabezado-tarjeta {
+        gap: 10px;
+        margin-top: 20px;
+    }
+    
+    .contenido-encabezado-tarjeta img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .texto-tarjeta {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    
+    .texto-tarjeta h3 {
+        font-size: 1.5rem;
+    }
+    
+    .texto-tarjeta p {
+        font-size: 0.9rem;
+    }
+    
+    .texto-secundario-enfoque {
+        width: 95%;
+        margin-top: 20px;
+    }
+    
+    .texto-secundario-enfoque h3 {
+        font-size: 1.5rem;
+    }
+    
+    .texto-secundario-enfoque p {
+        font-size: 0.9rem;
+    }
+    
+    /* Proyectos */
+    .proyectos {
+        padding: 30px 10px;
+    }
+    
+    .texto-proyectos {
+        width: 95%;
+        margin-top: 40px;
+    }
+    
+    .texto-proyectos h2 {
+        font-size: 1.8rem;
+    }
+    
+    .texto-proyectos p {
+        font-size: 0.9rem;
+    }
+    
+    .contenedor-encabezado,
+    .contenedor-informacion-proyecto {
+        width: 98%;
+    }
+    
+    .fondo-encabezado-proyecto img {
+        width: 250px;
+        height: 150px;
+    }
+    
+    .tecnologias-usadas {
+        margin-top: 15px;
+        gap: 3px;
+    }
+    
+    .tecnologia {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .tecnologia h3 {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    
+    .texto-pie-de-pagina-tarjeta-proyecto {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    .texto-pie-de-pagina-tarjeta-proyecto h3 {
+        font-size: 1.3rem;
+    }
+    
+    .texto-pie-de-pagina-tarjeta-proyecto p {
+        font-size: 0.9rem;
+    }
+    
+    .link-proyecto {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
 
 

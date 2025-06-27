@@ -7,11 +7,13 @@
 
 .Contenido{
     padding-top:80px ; /* un poco más que los 80px del header */
+    margin-bottom: 0;
 }
 
 a{
     text-decoration: none;
 }
+
 /* Sticky Footer Layout
 html, body {
   height: 100%;
@@ -26,3 +28,13 @@ html, body {
 html{
     scroll-behavior: smooth;
 }
+
+@view-transition{
+  navigation: auto;
+}
+
+::view-transition-group(*){
+  animation-duration: 2s;
+}
+
+

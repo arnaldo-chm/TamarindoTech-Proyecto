@@ -12,7 +12,6 @@
 a{
     text-decoration: none;
 }
-<<<<<<< HEAD
 /* Sticky Footer Layout */
 html, body {
   height: 100%;
@@ -23,9 +22,7 @@ html, body {
 .main-content {
   flex: 1;
 }
-=======
 
 html{
     scroll-behavior: smooth;
 }
->>>>>>> 0cef64f05352a82a8f107258f5b8dd150fb921d3

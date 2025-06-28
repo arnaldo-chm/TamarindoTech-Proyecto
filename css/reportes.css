@@ -71,3 +71,13 @@ body{
 footer{
     margin-top: 220px;
 }
+
+@media (max-width: 480px) {
+  .report {
+    flex-direction: column;
+  }
+
+  .texto-invitacion {
+    text-align: center;
+  }
+}

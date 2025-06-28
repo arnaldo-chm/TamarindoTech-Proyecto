@@ -6,7 +6,7 @@
         <title>Tamarindo Tech</title>
         <link rel="stylesheet" href="./css/landingpage.css">
         <!-- <link rel="stylesheet" href="./css/header.css"> -->
-        <link rel="stylesheet" href="./css/footer.css">
+        <!-- <link rel="stylesheet" href="./css/footer.css"> -->
         <link rel="stylesheet" href="./css/general.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,8 @@
                     <li><a href="#Filosofia">Filosofia</a></li>
                     <li><a href="#Valores">Valores</a></li>
                     <li><a href="#enfoque">Enfoque</a></li>
-                    <button class="boton_sing_out" id="boton_sing_out"><a href="cerrar_sesion.html">Cerrar Sesion</a></button>
+                    <li><a href="#proyecto">Proyecto</a></li>
+                    <button class="boton_sing_out" id="boton_sing_out"><a href="#contacto">Contactenos</a></button>
                 </ul>
             </nav>
         </header>
@@ -179,7 +180,7 @@
                     <h2>Nuestro enfoque</h2>
                     <p>Los pilares que sostienen nuestra cultura empresarial</p>
                 </div>
-                    <div class="contenido-enfoque">
+            <div class="contenido-enfoque">
                 <div class="info-tarjeta-enfoque">
                     <div class="contenido-encabezado-tarjeta">
                         <img src="imagenes/js.png" alt="Logo de Javascript">
@@ -189,14 +190,47 @@
                     </div>
                      <div class="texto-tarjeta">
                         <h3>Proceso de Desarrollo</h3>
-                        <p>Utilizamos metodologías ágiles y las mejores prácticas de la industria para garantizar entregas de calidad.</p>
+                        <p>Utilizamos metodologías ágiles y las mejores prácticas de la industria <br><br> para garantizar entregas de calidad.</p>
                     </div>
                 </div>
+                <div class="texto-secundario-enfoque">
+                    <h3>Tecnología de Vanguardia</h3>
+                    <p>Nuestro equipo se mantiene actualizado con las últimas tendencias tecnológicas para ofrecer soluciones modernas y escalables que se adapten al futuro de tu negocio.
+                        Trabajamos con tecnologías como React, Node.js, Javascript, cloud computing y mucho más para crear productos robustos y eficientes.</p>
+                </div>
+            </div>
+            </section>
+
+            <section class="proyectos" id="proyecto">
+                <div class="texto-proyectos">
+                    <h2>Nuestro Proyecto mas destacado</h2>
+                    <p>Conoce algunos de los proyectos que hemos desarrollado y cómo hemos ayudado a transformar negocios con tecnología innovadora.</p>
+                </div>
+                <div class="proyecto-tarjeta-contenedor">
+                    <div class="contenedor-encabezado">
+                    <div class="tecnologias-usadas">
+                        <div class="tecnologia"><h3>Javascript</h3></div>
+                        <div class="tecnologia"><h3>Html </h3></div>
+                        <div class="tecnologia"><h3>Css</h3></div>
+                        <div class="tecnologia"><h3>Node.js</h3></div>
+                    </div>
+                    <div class="fondo-encabezado-proyecto">
+                        <img src="imagenes/fondo-proyecto.jpg" alt="Imagen Proyecto">
+                        <!-- <iframe src="/TamarindoTech-Proyecto/html/inicio.html" title="description"></iframe> -->
+                        <button class="link-proyecto"><a href="./html/inicio.html">Ver proyecto</a></button>
+                    </div>
+                    </div>
+                    <div class="contenedor-informacion-proyecto">
+                        <div class="texto-pie-de-pagina-tarjeta-proyecto">
+                            <h3>Por definir creo</h3>
+                            <p>Plataforma integral para la gestión inteligente de cultivos con monitoreo IoT y análisis predictivo. </p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
             
-        <footer class="footer">
+        <footer class="footer" id="contacto">
             <div class="footer-contenedor">
                 <div class="footer-contenido">
                     <!-- Columna 1: Logo y redes sociales -->
@@ -252,8 +286,5 @@
                 </div>
             </div>
         </footer>
-
-
-    
     </body>
-    </html>
+</html>

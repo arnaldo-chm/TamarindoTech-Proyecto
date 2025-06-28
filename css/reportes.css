@@ -72,12 +72,17 @@ footer{
     margin-top: 220px;
 }
 
-@media (max-width: 480px) {
-  .report {
-    flex-direction: column;
-  }
+@media (max-width: 1113px) {
 
-  .texto-invitacion {
+  .report{
+    flex-direction: column;
+    gap: 25px;
+  }
+  .inv-1{
     text-align: center;
+    margin: 20px;
+  }
+  footer{
+    margin-top: 50px;
   }
 }
